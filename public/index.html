@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Telerik Academy Courses</title>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/css/site.css">
+    <link rel="stylesheet" type="stylesheet/css" href="components/toastr/toastr.css">
+</head>
+
+<body ng-app="app">
+    <header class="nav navbar">
+        <div class="container">
+            <ul class="nav nav-tabs pull-left">
+                <li><a href="#/home" class="btn btn-default">Home</a></li>
+                <li><a href="#/posts" class="btn btn-default">Posts</a></li>
+                <li><a href="#/postform" class="btn btn-default">Create Post</a></li>
+            </ul>
+            <ul class="nav nav-tabs pull-right">
+                <li><a href="#/login" id="btn-main-login" class="btn btn-default">Login / Register</a></li>
+                <li><div id="logged-user-info-box" class="hidden"></div></li>
+                <li><a href="#/signout" id="btn-main-logout" class="btn btn-danger hidden">Signout</a></li>
+            </ul>
+
+        </div>
+        <h1 class="text-center">Crowd Share Application</h1>
+    </header>
+    <section class="container text-center">
+
+        <div id="content">
+
+        </div>
+
+    </section>
+    <footer>
+        <h4 class="text-center">
+            &copy; Telerik Academy 2015
+        </h4>
+    </footer>
+
+    <!-- Libraries   -->
+
+    <script type="text/javascript" src="components/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="components/handlebars/handlebars.js"></script>
+    <script type="text/javascript" src="components/sammy/lib/sammy.js"></script>
+    <script type="text/javascript" src="components/js-sha1/src/sha1.js"></script>
+    <script type="text/javascript" src="components/moment/moment.js"></script>
+    <script type="text/javascript" src="components/toastr/toastr.js"></script>
+
+    <!-- Helpers -->
+    <script type="text/javascript" src="js/helpers/templatesHelper.js"></script>
+
+    <!-- Controllers -->
+    <script type="text/javascript" src="js/controllers/homeController.js"></script>
+    <script type="text/javascript" src="js/controllers/accountController.js"></script>
+    <script type="text/javascript" src="js/controllers/postsController.js"></script>
+
+    <!-- App data and Entry point -->
+    <script type="text/javascript" src="js/data.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+
+
+
+</body>
+
+
+</html>

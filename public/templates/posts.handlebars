@@ -1,0 +1,22 @@
+<h3>All Posts</h3>
+
+<ul class="pagination">
+  <li class="disabled"><a href="#/posts/3/0">«</a></li>
+  <li class="active"><a href="#/posts/3/1">1</a></li>
+  <li><a href="#/posts/3/2">2</a></li>
+  <li><a href="#/posts/3/3">3</a></li>
+  <li><a href="#/posts/3/4">4</a></li>
+  <li><a href="#/posts/3/5">5</a></li>
+  <li><a href="#/posts/3/6">»</a></li>
+</ul>
+
+<div id="posts">
+    {{#this}}
+        <div class="list-group">
+          <a href="#" class="list-group-item">
+          <h4 class="list-group-item-heading">#{{id}} <strong class=" text-info">{{title}}</strong></h4>
+            <p class="list-group-item-text lead">{{body}} <br/> by <strong>{{user.username}}</strong></p>
+          </a>
+        </div>  
+    {{/this}}
+</div>
